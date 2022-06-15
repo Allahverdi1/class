@@ -1,0 +1,28 @@
+﻿@model About
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card">
+    <div class="card-header">
+        About
+    </div>
+    <div class="card-body">
+        <div class="w-100 d-flex justify-content-end">
+            <a asp-action="Update" class="btn btn-outline-success">Edit</a>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="w-100" src="~/Assets/images/@Model.ImageUrl" />
+            </div>
+            <div class="col-md-6">
+                <p>Full Name : @Model.FullName</p>
+                <p>Description : @Model.Description</p>
+                <p>BirthDay : @Model.BirthDay</p>
+                <p>Email : @Model.Email</p>
+                <p>Phone : @Model.Phone</p>
+                <p>Address : @Model.Address</p>
+            </div>
+        </div>
+    </div>
+</div>

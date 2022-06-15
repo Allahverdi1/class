@@ -1,0 +1,353 @@
+﻿@using Clyde.Models
+@model About
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="~/Assets/css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-2 col-lg-2">
+                        <span>CLYDE.</span>
+                    </div>
+                    <div class="menu-links col-10 col-lg-10">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Skills</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <div class="title">
+                                <span>Hello! This is Clyde</span>
+                                <p>Cretive <span>UI/UX</span> Designer&Developer</p>
+                            </div>
+                            <div class="btns">
+                                <a class="btn btn-success">Hire me</a>
+                                <a class="btn btn-outline-success"> Download CV</a>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/clyde/images/xbg_2.jpg.pagespeed.ic.2Wk4NDH8dv.webp" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <div class="title">
+                                <span>Hello! This is Clyde</span>
+                                <p>Cretive <span>UI/UX</span> Designer&Developer</p>
+                            </div>
+                            <div class="btns">
+                                <a class="btn btn-success">Hire me</a>
+                                <a class="btn btn-outline-success"> Download CV</a>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/clyde/images/xbg_1.jpg.pagespeed.ic.0B-wz9A3wz.webp" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-lg-3 box">
+                        <div class="icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="info">
+                            <div class="count">750</div>
+                            <div class="title">Project Complete</div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-3 box">
+                        <div class="icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="info">
+                            <div class="count">500</div>
+                            <div class="title">Happy Clients</div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-3 box">
+                        <div class="icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <div class="info">
+                            <div class="count">450</div>
+                            <div class="title">Cups of Coffee</div>
+                        </div>
+                    </div>
+                    <div class="col-3 col-lg-3 box">
+                        <div class="icon">
+                            <i class="far fa-calendar-alt"></i>
+                        </div>
+                        <div class="info">
+                            <div class="count">780</div>
+                            <div class="title">Years Experienced</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="MyIntro" class="py-5 my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-6">
+                        <img src="~/Assets/images/@Model.ImageUrl" class="w-100" alt="" />
+                    </div>
+                    <div class="col-6 col-lg-6 scright">
+                        <div class="Info">
+                            <div class="title">My Intro</div>
+                            <div class="SubTitle">About Me</div>
+                            <div class="desc">@Model.Description</div>
+                        </div>
+                        <div class="Infos">
+                            <ul>
+                                <li>Name: <span>@Model.FullName</span></li>
+                                <li>Date Of Birth: <span>@Model.BirthDay.ToString("MM/dd/yyyy  33")</span></li>
+                                <li>Address: <span>@Model.Address</span></li>
+                                <li>Email: <span>@Model.Email</span></li>
+                                <li>Phone: <span> @Model.Phone</span></li>
+                            </ul>
+                        </div>
+                        <div class="Hobbies">
+                            <ul>
+                                <li>
+                                    <div><i class="fas fa-headphones"></i></div>
+                                    <span>Music</span>
+                                </li>
+                                <li>
+                                    <div><i class="fas fa-bus"></i></div>
+                                    <span>Travel </span>
+                                </li>
+                                <li>
+                                    <div><i class="fas fa-file-video"></i></div>
+                                    <span>Movie</span>
+                                </li>
+                                <li>
+                                    <div><i class="fas fa-skiing-nordic"></i></div>
+                                    <span>Sports</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Skills" class="py-5 my-5">
+            <div class="container">
+                <div class="Infos">
+                    <div class="title">Skills</div>
+                    <div class="subTitle">My Skills</div>
+                    <div class="desc">
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 my-2 col-lg-4 text-center">
+                        <div class="card p-2">
+                            <h3 class="skill-title">Css</h3>
+                            <div class="percent">
+                                <svg>
+                                    <circle cx="105" cy="105" r="100"></circle>
+                                    <circle
+                                    cx="105"
+                                    cy="105"
+                                    r="100"
+                                    style="--percent: 30"
+                                    ></circle>
+                                </svg>
+                                <div class="number">
+                                    <h3>30<span>%</span></h3>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h2>HTML</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>28%</h3>
+                                    <small>last week</small>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>28%</h3>
+                                    <small>last week</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="services" class="py-5 my-5">
+            <div class="container">
+                <p class="title">I AM GReaT AT</p>
+                <p class="subTitle">We do awesome services for our clients</p>
+                <div class="desc text-center">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="m-2 service-card p-5 position-relative">
+                            <span class="card-icon position-absolute"><i class="fa-solid fa-boxes-stacked fs-3"></i></span>
+                            <h3>Web Design</h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <p class="title">contact us</p>
+                <p class="subTitle">Have a Project?</p>
+                <div class="desc text-center">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-8 bg-secondary p-5">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your email">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Your message"></textarea>
+                            </div>
+                            <button class="btn btn-success">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="justify-content-center d-flex align-items-center w-100 contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="m-0">Address:</p>
+                                <address>198 West 21th Street, Suite 721 New York NY 10016</address>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="justify-content-center d-flex align-items-center w-100 contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="m-0">Address:</p>
+                                <address>198 West 21th Street, Suite 721 New York NY 10016</address>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="justify-content-center d-flex align-items-center w-100 contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="m-0">Address:</p>
+                                <address>198 West 21th Street, Suite 721 New York NY 10016</address>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="justify-content-center d-flex align-items-center w-100 contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="m-0">Address:</p>
+                                <address>198 West 21th Street, Suite 721 New York NY 10016</address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./~/Assets/Js/script.js"></script>
+</body>
+
+</html>
