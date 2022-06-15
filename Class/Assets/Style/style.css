@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header nav .container .row {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .container .row .logo {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+header nav .container .row .menu-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+}
+
+header nav .container .row .menu-links ul li {
+  margin-right: 30px;
+}
+
+header nav .container .row .menu-links ul li a {
+  color: black;
+  font-weight: 600;
+}
+
+main #slider .mySwiper .swiper-slide {
+  width: 100%;
+  height: 500px;
+}
+
+main #slider .mySwiper .swiper-slide .info {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+
+main #slider .mySwiper .swiper-slide .info .title span {
+  font-size: 30px;
+}
+
+main #slider .mySwiper .swiper-slide .info .title p {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+main #slider .mySwiper .swiper-slide .info .title p span {
+  color: green;
+}
+
+main #slider .mySwiper .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main #counter .container {
+  padding: 60px 0;
+}
+
+main #counter .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #counter .container .row .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #counter .container .row .box .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+  margin-right: 10px;
+}
+
+main #counter .container .row .box .icon i {
+  font-size: 30px;
+}
+
+main #counter .container .row .box .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #counter .container .row .box .info .count {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main #counter .container .row .box .info .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8fa48f;
+}
+
+main #MyIntro .container .row .scleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #MyIntro .container .row .scleft img {
+  height: 650px;
+  width: 500px;
+  border-radius: 12px;
+}
+
+main #MyIntro .container .row .scright {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #MyIntro .container .row .scright .Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+main #MyIntro .container .row .scright .Info .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #95b195;
+}
+
+main #MyIntro .container .row .scright .Info .SubTitle {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+main #MyIntro .container .row .scright .Info .desc {
+  font-size: 16px;
+}
+
+main #MyIntro .container .row .scright .Infos {
+  margin-bottom: 45px;
+}
+
+main #MyIntro .container .row .scright .Infos ul {
+  padding: 0;
+}
+
+main #MyIntro .container .row .scright .Infos ul li {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main #MyIntro .container .row .scright .Infos ul li span {
+  color: #95b195;
+  margin-left: 15px;
+}
+
+main #MyIntro .container .row .scright .Hobbies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #MyIntro .container .row .scright .Hobbies ul li {
+  border-left: 3px solid #95b195;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 25px;
+}
+
+main #MyIntro .container .row .scright .Hobbies ul li div {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 45px;
+  background-color: #95b195;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #MyIntro .container .row .scright .Hobbies ul li span {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main #Skills .container {
+  margin-top: 100px;
+}
+
+main #Skills .container .Infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #Skills .container .Infos .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #95b195;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+main #Skills .container .Infos .subTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+main #Skills .container .Infos .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(149, 177, 149);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+header {
+    nav {
+        .container {
+            .row {
+                padding: 10px 0;
+                display: flex;
+                justify-content: space-between;
+                .logo {
+                    font-weight: 800;
+                    font-size: 20px;
+                }
+                .menu-links {
+                    ul {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin: 0;
+                        li {
+                            margin-right: 30px;
+                            a {
+                                color: black;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    #slider {
+        .mySwiper {
+            .swiper-slide {
+                width: 100%;
+                height: 500px;
+                .info {
+                    position: absolute;
+                    top: 35%;
+                    left: 15%;
+                    .title {
+                        span {
+                            font-size: 30px;
+                        }
+                        p {
+                            font-size: 30px;
+                            font-weight: 900;
+                            span {
+                                color: #b1b493;
+                            }
+                        }
+                    }
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+        }
+    }
+    #counter {
+        .container {
+            padding: 60px 0;
+            .row {
+                display: flex;
+                justify-content: space-evenly;
+                .box {
+                    display: flex;
+                    .icon {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 45px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #b1b493;
+                        i {
+                            font-size: 30px;
+                        }
+                        margin-right: 10px;
+                    }
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .count {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+                        .title {
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: rgb(143, 164, 143);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #MyIntro {
+        .container {
+            .row {
+                .scleft {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 650px;
+                        width: 500px;
+                        border-radius: 12px;
+                    }
+                }
+                .scright {
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    .Info {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 60px;
+                        .title {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: rgb(149, 177, 149);
+                        }
+                        .SubTitle {
+                            font-size: 25px;
+                            font-weight: 500;
+                        }
+                        .desc {
+                            font-size: 16px;
+                        }
+                    }
+                    .Infos {
+                        margin-bottom: 45px;
+                        ul {
+                            padding: 0;
+                            li {
+                                color: black;
+                                font-size: 20px;
+                                line-height: 40px;
+                                font-weight: 600;
+                                span {
+                                    color: rgb(149, 177, 149);
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .Hobbies {
+                        ul {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            li {
+                                border-left: 3px solid rgb(149, 177, 149);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-right: 25px;
+                                div {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin-left: 10px;
+                                    border-radius: 45px;
+                                    background-color: rgb(149, 177, 149);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                span {
+                                    margin-left: 10px;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #Skills {
+        .container {
+            margin-top: 100px;
+            .Infos {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .desc {
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 500;
+                    opacity: 0.6;
+                }
+            }
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: #ffffff;
+                border-radius: 5px;
+            }
+            .card .percent {
+                position: relative;
+            }
+            .card svg {
+                position: relative;
+                width: 210px;
+                height: 210px;
+                transform: rotate(-90deg);
+            }
+            .card svg circle {
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: #f0f0f0;
+                stroke-width: 10;
+                stroke-linecap: round;
+            }
+            .card svg circle:last-of-type {
+                stroke-dasharray: 625px;
+                stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+                stroke: rgb(149, 177, 149);
+            }
+            .card .number {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    #services {
+        .service-card {
+            transition: 0.3s;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, .1) 0 10px 15px;
+            &:hover {
+                color: #fff;
+                background-color: #b1b493;
+            }
+            &:hover .card-icon {
+                left: 70px;
+                background-color: #fff;
+                color: #b1b493;
+            }
+        }
+        .card-icon {
+            display: block;
+            text-align: center;
+            transition: 0.3s;
+            border-radius: 50%;
+            width: 70px;
+            left: 35px;
+            height: 70px;
+            line-height: 70px;
+            color: #ffffff;
+            top: -35px;
+            background-color: #b1b493;
+        }
+    }
+    #contact{
+        .contact-icon{
+            width: 60px!important;
+            height: 60px;
+            background-color: #b1b493;
+            border-radius: 50%;
+        }
+    }
+}
